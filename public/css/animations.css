@@ -1,0 +1,44 @@
+/* Tops of the page */
+.container-info {
+          animation: 1s fadeInLeft forwards;
+}
+
+
+/* Middle of page */
+.container-skills {
+          animation: 2s fadeInLeft forwards;
+}
+.container-portfolio {
+          animation: 2s fadeInLeft forwards;
+}
+.container-contact-form{
+          animation: 2s fadeInLeft forwards;
+}
+.panel-heading {
+          padding: 20px 25px;
+          display: block;
+          width: 100%;
+          font-weight: 500;
+          font-size: 14px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-family: quicksand, Arial, sans-serif;
+          background-color: #2c98f0;
+          color: #fff;
+          position: relative;
+          animation: 2s fadeInLeft forwards;
+}
+
+.container-about-footer {
+          animation: 2.5s fadeInLeft forwards;
+}
+@keyframes fadeInLeft {
+          0% {
+                    transform: translateX(-200px);
+                    opacity: 0;
+          }
+
+          100% {
+                    transform: translateX(0px);
+          }
+}
