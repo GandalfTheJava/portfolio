@@ -28,10 +28,11 @@ app.post('/', function (req, res) {
 
         // send mail with defined transport object
         let info = await transporter.sendMail({
-            from: req.body.email, // sender address
+            from: req.body.name,
+            email: req.body.email, // sender address
             to: process.env.EMAIL_RECEIVER, // list of receivers
             subject: req.body.subject, // Subject line
-            text: req.body.email + "\n" + req.body.subject + "\n" + req.body.message, // plain text body
+            text: "name: " + req.body.name + "\n" + "email: " + req.body.email + "\n" + "subject: " + req.body.subject + "\n" + "message: " + req.body.message, // plain text body
 
         });
         console.log('Message sent: %s', info.messageId);
