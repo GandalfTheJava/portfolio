@@ -15,9 +15,9 @@ app.post('/', function (req, res) {
     // using Twilio SendGrid's v3 Node.js Library
     // https://github.com/sendgrid/sendgrid-nodejs
     const sgMail = require('@sendgrid/mail');
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+    sgMail.setApiKey("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");
     const msg = {
-        to: process.env.GMAIL_USER,
+        to: "mehmetcimen23@gmail.com",
         from: req.body.email,
         subject: req.body.subject,
         text: `${req.body.name} \n ${req.body.message}`,
