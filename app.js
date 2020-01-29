@@ -20,7 +20,7 @@ app.post('/', function (req, res) {
         to: process.env.GMAIL_USER,
         from: req.body.email,
         subject: req.body.subject,
-        text: ` My name is ${req.body.name} "\n" ${req.body.message}`,
+        text: `${req.body.name} \n ${req.body.message}`,
     };
     sgMail.send(msg);
     res.redirect("/");
