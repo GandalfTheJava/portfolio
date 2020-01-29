@@ -1,3 +1,3 @@
 # portfolio
 
-CAN BE SEEN HERE: https://gandalfthejava.github.io/portfolio/
+CAN BE SEEN HERE: https://itismehmet.herokuapp.com/
