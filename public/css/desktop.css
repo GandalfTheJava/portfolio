@@ -60,8 +60,11 @@
     width: 100%;
     background-color: white;
 }
-.container-info{
-    margin-top: 100px;
+
+@media only screen and (max-width: 1000px) { 
+    .container-info{
+        margin-top: 10px;
+    }
 }
 
 .container-about-description {
